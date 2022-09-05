@@ -124,6 +124,8 @@ const routes: Routes = [
 
   { path: 'FeesCharge', loadChildren: () => import('./pages/fees-charge/fees-charge.module').then(m => m.FeesChargeModule) },
 
+  { path: 'HitechHome', loadChildren: () => import('./pages/hitech-home/hitech-home.module').then(m => m.HitechHomeModule) },
+
 
 
   // { path: 'CourseContentHome', loadChildren: () => import('./pages/course-content/course-content-home/course-content-home.module').then(m => m.CourseContentHomeModule) },
