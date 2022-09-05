@@ -10,6 +10,7 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatMenuModule} from "@angular/material/menu";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+import { MenubarModule } from 'primeng/menubar';
 
 
 @NgModule({
@@ -28,7 +29,9 @@ import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
     MatFormFieldModule,
     MatMenuModule,
     MatToolbarModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MenubarModule,
+
   ]
 })
 export class HeaderModule { }
