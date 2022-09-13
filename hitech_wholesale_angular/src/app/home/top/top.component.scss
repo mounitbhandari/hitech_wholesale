@@ -1,6 +1,6 @@
 .ball {
   position: relative;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
   //top: 200px;
   height: 25px;
@@ -8,15 +8,15 @@
 }
 
 .masthead {
-  min-height: 30rem;
+  // min-height: 30rem;
   position: relative;
   display: table;
   width: 100%;
   height: auto;
-  padding-top: 8rem;
+  // padding-top: 8rem;
   padding-bottom: 8rem;
   //background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url('~assets/img/gold_background.jpg');
-  background-image: url("../../../assets/img/gold_background2.jpg");
+  // background-image: url("../../../assets/img/gold_background2.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,7 +28,7 @@
 }
 @media (min-width: 992px) {
   .masthead {
-    height: 100vh;
+    // height: 100vh;
   }
   .masthead h1, .masthead .h1 {
     font-size: 5.5rem;

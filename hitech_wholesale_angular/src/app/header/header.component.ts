@@ -156,11 +156,7 @@ export class HeaderComponent implements OnInit {
   // ];
 
     this.items = [
-      {
-        label:'Home',
-        imageSrc:'assets/hitech-wholesale/Hi-Tech-logo.png',
-        
-      },
+      
       {
           label:'Home',
           icon:'pi pi-fw pi-home',
