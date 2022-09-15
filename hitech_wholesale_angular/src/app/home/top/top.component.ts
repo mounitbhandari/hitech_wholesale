@@ -3,6 +3,7 @@ import {animate, keyframes, state, style, transition, trigger} from '@angular/an
 import {of} from 'rxjs';
 import {saveAs} from 'file-saver';
 import {HttpClient} from "@angular/common/http";
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-top',
@@ -21,6 +22,14 @@ export class TopComponent implements OnInit {
   }
 
   slides: any[] = new Array(3).fill({id: -1, src: '', title: '', subtitle: ''});
+
+  customerInfoFormGroup = new FormGroup({
+    name: new FormControl(null),
+    email: new FormControl(null),
+    whatsappNumber: new FormControl(null),
+    message: new FormControl(null),
+    
+  });
 
   constructor(private http: HttpClient) {
     this.http.get('assets/projectDetails.json').subscribe((data: any) => {

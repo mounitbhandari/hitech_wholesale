@@ -1,6 +1,6 @@
 <!-- <header class="masthead d-flex align-items-center"> -->
 
-  <!-- <div class="container px-4 px-lg-5 text-center">
+<!-- <div class="container px-4 px-lg-5 text-center">
     
     <h1 class="mb-1" data-aos="fade-up"
         data-aos-duration="3000">
@@ -20,22 +20,18 @@
 
   </div> -->
 
+
+<div class="">
   <div class="d-flex" style="max-height: 450px">
     <div class="col-7 mt-3 p-0 pl-1">
 
-    
+
       <c-carousel>
         <c-carousel-indicators></c-carousel-indicators>
         <c-carousel-inner>
-          <c-carousel-item *ngFor="let slide of slides" [interval] = '2000'>
-            <img
-              alt="{{slide.title}}"
-              class="d-block w-100"
-              loading="lazy"
-              src="{{slide.src}}"
-              height="420px" 
-              decoding="async"           
-            />
+          <c-carousel-item *ngFor="let slide of slides" [interval]='2000'>
+            <img alt="{{slide.title}}" class="d-block w-100" loading="lazy" src="{{slide.src}}" height="420px"
+              decoding="async" />
             <c-carousel-caption class="d-none d-md-block">
               <h3>{{slide.title}}</h3>
               <p>{{slide.subtitle}}</p>
@@ -49,19 +45,13 @@
     </div>
     <div class="col-5 mr-2 p-1">
       <div class="mt-2">
-        
+
         <c-carousel>
           <!-- <c-carousel-indicators></c-carousel-indicators> -->
           <c-carousel-inner>
-            <c-carousel-item *ngFor="let slide of slides" [interval] = '2000'>
-              <img
-                alt="{{slide.title}}"
-                class="d-block w-100"
-                loading="lazy"
-                src="{{slide.src}}"
-                height="207px"
-                decoding="async" 
-              />
+            <c-carousel-item *ngFor="let slide of slides" [interval]='2000'>
+              <img alt="{{slide.title}}" class="d-block w-100" loading="lazy" src="{{slide.src}}" height="207px"
+                decoding="async" />
               <c-carousel-caption class="d-none d-md-block">
                 <h3>{{slide.title}}</h3>
                 <p>{{slide.subtitle}}</p>
@@ -74,19 +64,13 @@
 
       </div>
       <div class="mt-2">
-        
+
         <c-carousel>
           <!-- <c-carousel-indicators></c-carousel-indicators> -->
           <c-carousel-inner>
-            <c-carousel-item *ngFor="let slide of slides" [interval] = '2000'>
-              <img
-                alt="{{slide.title}}"
-                class="d-block w-100"
-                loading="lazy"
-                src="{{slide.src}}"
-                height="207px"
-                decoding="async" 
-              />
+            <c-carousel-item *ngFor="let slide of slides" [interval]='2000'>
+              <img alt="{{slide.title}}" class="d-block w-100" loading="lazy" src="{{slide.src}}" height="207px"
+                decoding="async" />
               <c-carousel-caption class="d-none d-md-block">
                 <h3>{{slide.title}}</h3>
                 <p>{{slide.subtitle}}</p>
@@ -102,10 +86,11 @@
     </div>
   </div>
 
-  <div class="ml-2 mr-2 text-center" style="border: 1px solid; padding: 10px;  border-radius: 10px;  box-shadow: 4px 5px #888888;">
+  <div class="ml-2 mr-2 text-center"
+    style="border: 1px solid; padding: 10px;  border-radius: 10px;  box-shadow: 4px 5px #888888;">
     <h2>Order & Buy</h2>
-    <div  class="d-flex ">
-      
+    <div class="d-flex ">
+
       <div class="col">
         <img loading="lazy" height="80px" decoding="async" src="../../../assets/img/img-1.png"><br>
         <label style="font-size: 20px !important;">Pharma Comapny</label>
@@ -130,26 +115,20 @@
   </div>
 
 
-  <div class="d-flex mt-2 ml-1" >
+  <div class="d-flex mt-2 ml-1">
     <div class="col-7" style="background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);border-radius: 10px;">
       <div class="d-flex">
         <h2>Free Products Offer</h2>
         <!-- <div style="text-align: right;">test</div> -->
       </div>
-      
-      <div >        
+
+      <div>
         <c-carousel style="border-radius: 10px;">
           <!-- <c-carousel-indicators></c-carousel-indicators> -->
           <c-carousel-inner>
-            <c-carousel-item *ngFor="let slide of slides" [interval] = '2000'>
-              <img style="border-radius: 10px;"
-                alt="{{slide.title}}"
-                class="d-block w-100"
-                loading="lazy"
-                src="{{slide.src}}"
-                height="207px"
-                decoding="async" 
-              />
+            <c-carousel-item *ngFor="let slide of slides" [interval]='2000'>
+              <img style="border-radius: 10px;" alt="{{slide.title}}" class="d-block w-100" loading="lazy"
+                src="{{slide.src}}" height="207px" decoding="async" />
               <c-carousel-caption class="d-none d-md-block">
                 <h3>{{slide.title}}</h3>
                 <p>{{slide.subtitle}}</p>
@@ -161,13 +140,198 @@
         </c-carousel>
       </div>
     </div>
-    <div class="col-5">test</div>
+    <div class="col ml-1" style="background: linear-gradient(to right, #c84e4e6d 0%, #6a63519b 100%); border-radius: 10px;">
+      <div style="text-align: center; color: white;font-weight: bold;">
+        <h1>Query Form</h1>
+      </div>
+      <form action="" [formGroup]="customerInfoFormGroup" appearance="fill">
+
+        <div class="d-flex">
+          <mat-form-field class="example-full-width m-2" style="width: 90% !important;">
+            <mat-label><i class="bi bi-person-circle mr-1"></i>Name</mat-label>
+            <input formControlName="name" maxlength="50" matInput placeholder="Enter Your Name" value="">
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width m-2" style="width: 90% !important;">
+            <mat-label><i class="bi bi-envelope-fill m-1"></i>Email Id</mat-label>
+            <input formControlName="email" maxlength="50" matInput placeholder="Enter Your Name" value="">
+          </mat-form-field>
+        </div>
+
+        <div class="d-flex">
+          <mat-form-field class="example-full-width m-2" style="width: 90% !important;">
+            <mat-label><i class="bi bi-whatsapp m-1"></i>Whatsapp Number</mat-label>
+            <input formControlName="whatsappNumber" maxlength="50" matInput placeholder="Enter Your Name" value="">
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width m-2" style="width: 90% !important;">
+            <mat-label><i class="bi bi-chat-left-dots-fill m-1"></i>Message</mat-label>
+            <input formControlName="message" maxlength="50" matInput placeholder="Enter Your Name" value="">
+          </mat-form-field>
+        </div>
+
+
+
+      </form>
+    </div>
   </div>
-  
- 
-  
 
 
+  <div class="d-flex mt-2 ml-1">
+    <div class="col" style="background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);border-radius: 10px;">
+      <div class="d-flex">
+        <h2>Free Products Offer</h2>
+        <!-- <div style="text-align: right;">test</div> -->
+      </div>
+      <div>
+        <c-carousel style="border-radius: 10px;">
+          <!-- <c-carousel-indicators></c-carousel-indicators> -->
+          <c-carousel-inner>
+            <c-carousel-item *ngFor="let slide of slides" [interval]='2000'>
+              <img style="border-radius: 10px;" alt="{{slide.title}}" class="d-block w-100" loading="lazy"
+                src="{{slide.src}}" height="300px" decoding="async" />
+              <c-carousel-caption class="d-none d-md-block">
+                <h3>{{slide.title}}</h3>
+                <p>{{slide.subtitle}}</p>
+              </c-carousel-caption>
+            </c-carousel-item>
+          </c-carousel-inner>
+          <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
+          <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
+        </c-carousel>
+      </div>
+    </div>
 
-<!-- </header> -->
+  </div>
 
+  <div class="d-flex m-1">
+
+    <div class="col mt-1 mr-1" style="background: linear-gradient(to right, #b8ff33 0%, #fa99ff 100%);border-radius: 5px;">
+      Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the
+      embed code for the video you want to add. You can also type a keyword to search online for the video that best
+      fits your document.
+
+    </div>
+
+    <div class="col mt-1" style="background: linear-gradient(to right, #99e9ff 0%, #ff33b1 100%);border-radius: 5px;">
+      Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the
+      embed code for the video you want to add. You can also type a keyword to search online for the video that best
+      fits your document.
+
+    </div>
+
+    <div class="col mt-1 ml-1" style="background: linear-gradient(to right, #8528ff 0%, #9999ff 100%);border-radius: 5px;">
+      Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the
+      embed code for the video you want to add. You can also type a keyword to search online for the video that best
+      fits your document.
+
+    </div>
+
+    <div class="col mt-1 ml-1" style="background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);border-radius: 5px;">
+      Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+      
+    </div>
+
+  </div>
+
+
+  <div class="d-flex m-2">
+    <div style="border: 1px solid rgb(215, 211, 211); padding: 10px;  border-radius: 10px;  box-shadow: 4px 5px #f3f1f1;" class="m-3">
+      <img src="/assets/img/cipla.png" height="77px" alt="">
+    </div>
+    <div style="border: 1px solid rgb(215, 211, 211); padding: 10px;  border-radius: 10px;  box-shadow: 4px 5px #f3f1f1;" class="m-3">
+      <img src="/assets/img/cipla.png" height="77px" alt="">
+    </div>
+    <div style="border: 1px solid rgb(215, 211, 211); padding: 10px;  border-radius: 10px;  box-shadow: 4px 5px #f3f1f1;" class="m-3">
+      <img src="/assets/img/cipla.png" height="77px" alt="">
+    </div>
+    <div style="border: 1px solid rgb(215, 211, 211); padding: 10px;  border-radius: 10px;  box-shadow: 4px 5px #f3f1f1;" class="m-3">
+      <img src="/assets/img/cipla.png" height="77px" alt="">
+    </div>
+    <div style="border: 1px solid rgb(215, 211, 211); padding: 10px;  border-radius: 10px;  box-shadow: 4px 5px #f3f1f1;" class="m-3">
+      <img src="/assets/img/cipla.png" height="77px" alt="">
+    </div>
+    <div style="border: 1px solid rgb(215, 211, 211); padding: 10px;  border-radius: 10px;  box-shadow: 4px 5px #f3f1f1;" class="m-3">
+      <img src="/assets/img/cipla.png" height="77px" alt="">
+    </div>
+    
+  </div>
+
+  <div class="d-flex m-2">
+    <div style="border: 1px solid rgb(215, 211, 211); padding: 10px;  border-radius: 10px;  box-shadow: 4px 5px #f3f1f1;" class="m-3">
+      <img src="/assets/img/cipla.png" height="77px" alt="">
+    </div>
+    <div style="border: 1px solid rgb(215, 211, 211); padding: 10px;  border-radius: 10px;  box-shadow: 4px 5px #f3f1f1;" class="m-3">
+      <img src="/assets/img/cipla.png" height="77px" alt="">
+    </div>
+    <div style="border: 1px solid rgb(215, 211, 211); padding: 10px;  border-radius: 10px;  box-shadow: 4px 5px #f3f1f1;" class="m-3">
+      <img src="/assets/img/cipla.png" height="77px" alt="">
+    </div>
+    <div style="border: 1px solid rgb(215, 211, 211); padding: 10px;  border-radius: 10px;  box-shadow: 4px 5px #f3f1f1;" class="m-3">
+      <img src="/assets/img/cipla.png" height="77px" alt="">
+    </div>
+    <div style="border: 1px solid rgb(215, 211, 211); padding: 10px;  border-radius: 10px;  box-shadow: 4px 5px #f3f1f1;" class="m-3">
+      <img src="/assets/img/cipla.png" height="77px" alt="">
+    </div>
+    <div style="border: 1px solid rgb(215, 211, 211); padding: 10px;  border-radius: 10px;  box-shadow: 4px 5px #f3f1f1;" class="m-3">
+      <img src="/assets/img/cipla.png" height="77px" alt="">
+    </div>
+    
+  </div>
+
+  <div class="d-flex m-2">
+    <div style="border: 1px solid rgb(215, 211, 211); padding: 10px;  border-radius: 10px;  box-shadow: 4px 5px #f3f1f1;" class="m-3">
+      <img src="/assets/img/cipla.png" height="77px" alt="">
+    </div>
+    <div style="border: 1px solid rgb(215, 211, 211); padding: 10px;  border-radius: 10px;  box-shadow: 4px 5px #f3f1f1;" class="m-3">
+      <img src="/assets/img/cipla.png" height="77px" alt="">
+    </div>
+    <div style="border: 1px solid rgb(215, 211, 211); padding: 10px;  border-radius: 10px;  box-shadow: 4px 5px #f3f1f1;" class="m-3">
+      <img src="/assets/img/cipla.png" height="77px" alt="">
+    </div>
+    <div style="border: 1px solid rgb(215, 211, 211); padding: 10px;  border-radius: 10px;  box-shadow: 4px 5px #f3f1f1;" class="m-3">
+      <img src="/assets/img/cipla.png" height="77px" alt="">
+    </div>
+    <div style="border: 1px solid rgb(215, 211, 211); padding: 10px;  border-radius: 10px;  box-shadow: 4px 5px #f3f1f1;" class="m-3">
+      <img src="/assets/img/cipla.png" height="77px" alt="">
+    </div>
+    <div style="border: 1px solid rgb(215, 211, 211); padding: 10px;  border-radius: 10px;  box-shadow: 4px 5px #f3f1f1;" class="m-3">
+      <img src="/assets/img/cipla.png" height="77px" alt="">
+    </div>
+    
+  </div>
+
+
+  <div class="m-1 p-2" style="border: 2px solid rgb(7, 5, 123); border-radius: 5px; background: linear-gradient(to right, #39fc7a 0%, #9999ff 100%)"> 
+    Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+    To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+  </div>
+
+  <div class="d-flex mt-2 ml-1">
+    <div class="col" style="background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);border-radius: 10px;">
+      <div class="d-flex">
+        <h2>Free Products Offer</h2>
+        <!-- <div style="text-align: right;">test</div> -->
+      </div>
+      <div>
+        <c-carousel style="border-radius: 10px;">
+          <!-- <c-carousel-indicators></c-carousel-indicators> -->
+          <c-carousel-inner>
+            <c-carousel-item *ngFor="let slide of slides" [interval]='2000'>
+              <img style="border-radius: 10px;" alt="{{slide.title}}" class="d-block w-100" loading="lazy"
+                src="{{slide.src}}" height="300px" decoding="async" />
+              <c-carousel-caption class="d-none d-md-block">
+                <h3>{{slide.title}}</h3>
+                <p>{{slide.subtitle}}</p>
+              </c-carousel-caption>
+            </c-carousel-item>
+          </c-carousel-inner>
+          <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
+          <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
+        </c-carousel>
+      </div>
+    </div>
+
+  </div>
+
+</div>
